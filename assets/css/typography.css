@@ -1,0 +1,81 @@
+/* 기본 타이포그래피 설정 */
+body {
+  font-family: var(--font-text), var(--font-fallback);
+  font-size: 1rem;
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+/* ===== 텍스트 스타일 ===== */
+
+/* text_logo: MuseoModerno SemiBold, Size:71, 행간:60, 자간:3% */
+.text-logo {
+  font-family: var(--font-logo);
+  font-size: var(--text-logo-size);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-logo);
+  letter-spacing: var(--tracking-logo);
+  background: var(--color01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* text_smallLogo: MuseoModerno SemiBold, Size:60, 행간:60, 자간:3% */
+.text-small-logo {
+  font-family: var(--font-logo);
+  font-size: var(--text-small-logo-size);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-logo);
+  letter-spacing: var(--tracking-logo);
+  background: var(--color01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* text_title: Actor Regular, Size:25 */
+.text-title {
+  font-family: var(--font-text);
+  font-size: var(--text-title-size);
+  font-weight: var(--font-normal);
+  color: var(--color-black);
+}
+
+/* text_ord: Actor Regular, Size:20, #000000 */
+.text-ord {
+  font-family: var(--font-text);
+  font-size: var(--text-ord-size);
+  font-weight: var(--font-normal);
+  color: var(--color-black);
+}
+
+/* text_small: Actor Regular, Size:16 */
+.text-small {
+  font-family: var(--font-text);
+  font-size: var(--text-small-size);
+  font-weight: var(--font-normal);
+  color: var(--color-black);
+}
+
+/* ===== 색상 클래스 ===== */
+.color02 {
+  color: var(--color02);
+}
+
+.text-muted {
+  color: var(--color-gray-500);
+}
+
+/* ===== 효과 클래스 ===== */
+.effect01 {
+  box-shadow: var(--effect01);
+}
+
+.effect02 {
+  box-shadow: var(--effect02);
+}

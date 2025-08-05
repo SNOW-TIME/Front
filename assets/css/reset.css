@@ -1,0 +1,63 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+p, ul, ol, dl, blockquote, pre {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  /* vertical-align 제거 - display: block과 충돌 */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: button;
+  appearance: button; /* 표준 속성 추가 */
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

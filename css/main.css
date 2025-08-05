@@ -1,0 +1,39 @@
+/* 모든 스타일 파일들을 import - 상대 경로 수정 */
+@import url('../assets/css/reset.css');
+@import url('../assets/css/variables.css');
+@import url('../assets/css/typography.css');
+@import url('../assets/css/components.css');
+@import url('../assets/css/utilities.css');
+
+/* 프로젝트별 커스텀 스타일 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.section {
+  padding: var(--space-16) 0;
+}
+
+/* 반응형 컨테이너 */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 var(--space-2);
+  }
+  
+  .section {
+    padding: var(--space-8) 0;
+  }
+}
+
+/* 다크모드 지원 (선택사항) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #1f2937;
+    --color-black: #f9fafb;
+    --color-gray-100: #374151;
+    --color-gray-200: #4b5563;
+    --color-gray-900: #f3f4f6;
+  }
+}
