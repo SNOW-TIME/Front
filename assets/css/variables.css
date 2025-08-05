@@ -1,0 +1,46 @@
+/* Google Fonts 로드 */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Actor&display=swap');
+
+:root {
+  /* ===== 사용자 정의 색상 ===== */
+  --color01: linear-gradient(135deg, #10F0DA 0%, #12CADA 46%, #08C4EE 69%, #00BFFF 100%);
+  --color02: #00BFFF;
+  
+  /* ===== 기본 색상 ===== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-500: #6b7280;
+  
+  /* ===== 폰트 설정 ===== */
+  --font-logo: 'MuseoModerno', sans-serif;
+  --font-text: 'Actor', sans-serif;
+  --font-fallback: -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  
+  /* ===== 폰트 크기 ===== */
+  --text-logo-size: 4.4375rem;    /* 71px */
+  --text-small-logo-size: 3.75rem; /* 60px */
+  --text-title-size: 1.5625rem;   /* 25px */
+  --text-ord-size: 1.25rem;       /* 20px */
+  --text-small-size: 1rem;        /* 16px */
+  
+  /* ===== 폰트 굵기 ===== */
+  --font-normal: 400;
+  --font-semibold: 600;
+  
+  /* ===== 행간 & 자간 ===== */
+  --leading-logo: 3.75rem;         /* 60px for logo */
+  --leading-normal: 1.5;
+  --tracking-logo: 0.03em;         /* 3% for logo */
+  
+  /* ===== 그림자 효과 ===== */
+  --effect01: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --effect02: 0 4px 10px 0 var(--color02);
+  
+  /* ===== 기본 간격 ===== */
+  --space-2: 0.5rem;    /* 8px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+
+  /* 위는 기본 설정. 건드리지 마시오. */
+}
