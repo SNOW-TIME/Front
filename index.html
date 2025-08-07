@@ -7,19 +7,18 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <div class="container">
-    <!-- 로고 예시 -->
-    <header class="text-center p-6">
-      <h1 class="text-logo">Snow Time</h1>
-      <p class="text-title color02 mt-4">강의실 시간표 빠르게 검색하기</p>
-    </header>
-
-    <!-- 기본 컴포넌트 예시 -->
-    <main class="p-6">
-      
-    </main>
-
+  <!-- 로딩 화면 -->
+  <div id="loading" class="hidden">
+    <div class="container text-center">
+      <p class="text-ord">로딩 중...</p>
+    </div>
   </div>
+
+  <!-- 앱 컨테이너 - 여기에 동적으로 화면이 로드됩니다 --> <!-- 수정: 앱 컨테이너 추가 -->
+  <div id="app">
+    <!-- 초기 화면은 main.js에서 동적으로 로드됩니다 -->
+  </div>
+
   <script type="module" src="./js/main.js"></script>
 </body>
 </html>
