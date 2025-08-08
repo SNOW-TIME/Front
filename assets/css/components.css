@@ -1,0 +1,94 @@
+/* 기본 버튼 */
+.btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-text);
+  font-size: var(--text-small-size);
+  font-weight: var(--font-normal);
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gray_btn {
+  display: inline-block;
+  padding: var(--btn-padding, var(--space-2) var(--space-4));
+  font-family: var(--font-text);
+  font-size: var(--btn-font-size, var(--font-normal));
+  width: var(--btn-width, auto);
+  height: var(--btn-height, auto);
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--color02);
+  border: 1px solid var(--color-gray-500);
+  border-radius: 80px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.gray_btn:hover {
+  background: var(--color01);
+  color: var(--color-white)
+}
+
+.btn_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== 기본 컴포넌트 예시 ===== */
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.button-group button {
+  position: relative;
+  font-size: 16px;
+  padding: 14px 24px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  width: 240px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.2); /* ✅ 그림자 효과 */
+}
+
+/* 그라데이션 테두리 효과를 위한 before 가상 요소 */
+.button-group button::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left = 0 */
+  border-radius: 30px;
+  padding: 2px;
+  background: linear-gradient(to right, #10F0DA, #12CADA, #08C4EE, #00BFFF); /* ✅ 그라데이션 */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+/* hover 및 active 상태 효과 */
+.button-group button:hover,
+.button-group button:active {
+  color: white;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.button-group button:hover::before,
+.button-group button:active::before {
+  background: none;
+}

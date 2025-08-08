@@ -1,0 +1,21 @@
+/* ===== 기본 유틸리티 클래스 ===== */
+
+/* 텍스트 정렬 */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* 마진 */
+.mt-2 { margin-top: var(--space-2); }
+.mt-4 { margin-top: var(--space-4); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+
+/* 패딩 */
+.p-4 { padding: var(--space-4); }
+.p-6 { padding: var(--space-6); }
+
+/* 표시/숨김 */
+.block { display: block; }
+.inline { display: inline; }
+.hidden { display: none; }
