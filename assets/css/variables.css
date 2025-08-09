@@ -33,7 +33,8 @@
   --tracking-logo: 0.03em;         /* 3% for logo */
   
   /* ===== 그림자 효과 ===== */
-  --effect01: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --effect01-box: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --effect01-drop: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --effect02: 0 4px 10px 0 var(--color02);
   
   /* ===== 기본 간격 ===== */
