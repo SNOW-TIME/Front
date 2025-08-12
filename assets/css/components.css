@@ -32,7 +32,7 @@
 
 .gray_btn:hover {
   background: var(--color01);
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .btn_center {
@@ -41,8 +41,7 @@
   align-items: center;
 }
 
-/* ===== 기본 컴포넌트 예시 ===== */
-
+/* ===== 버튼 그룹 ===== */
 .button-group {
   display: flex;
   flex-direction: column;
@@ -54,38 +53,39 @@
   position: relative;
   font-size: 16px;
   padding: 14px 24px;
-  background: white;
-  color: black;
+  background: var(--color-white);
+  color: var(--color-black);
   border: none;
   border-radius: 30px;
   width: 240px;
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 1;
-  box-shadow: 0 0 8px rgba(0, 198, 255, 0.2); /* ✅ 그림자 효과 */
+  box-shadow: var(--effect02); /* ✅ variables.css 그림자 변수 사용 */
 }
 
-/* 그라데이션 테두리 효과를 위한 before 가상 요소 */
+/* 그라데이션 테두리 효과 */
 .button-group button::before {
   content: "";
   position: absolute;
-  inset: 0; /* top, right, bottom, left = 0 */
+  inset: 0;
   border-radius: 30px;
   padding: 2px;
-  background: linear-gradient(to right, #10F0DA, #12CADA, #08C4EE, #00BFFF); /* ✅ 그라데이션 */
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  background: var(--color01); /* ✅ variables.css의 그라데이션 */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
           mask-composite: exclude;
   z-index: -1;
 }
 
-/* hover 및 active 상태 효과 */
+/* hover/active 상태 — typography.css 효과 클래스 이용 */
 .button-group button:hover,
 .button-group button:active {
-  color: white;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: var(--color-white);
+  background: var(--color01);
+  box-shadow: var(--effect01); /* ✅ hover 시 다른 그림자 효과 */
 }
 
 .button-group button:hover::before,
