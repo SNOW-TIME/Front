@@ -83,14 +83,16 @@
 
 /* 뒤로 가기 버튼 */
 .back-btn {
-  background: none;
+  background: url("../images/back-arrow.svg") no-repeat center;
   border: none;
-  font-size: var(--text-title-size);
-  color: var(--color02);
+  font-size: 0;
+  background-size: 220px 25px;
   cursor: pointer;
-  display: block;       /* 인라인 요소 -> 블록처럼 */
-  margin: 0 0 20px 0;    /* 아래쪽 공간 확보 삭제 ㄱㄴ*/
+  display: block;
+  margin: 10px 0 10px 0;
   text-align: left;
+  width: 40px;
+  height: 40px;
 }
 
 /* 큰 틀, 하늘색 섹션*/
@@ -211,7 +213,7 @@ border-color: var(--color02);
   font-size: var(--text-small-size);
   background-color: var(--color-white);
   appearance: none;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%2300BFFF" d="m0 1 2 2 2-2z"/></svg>');
+  background-image: url("../images/dropdown-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 12px;
