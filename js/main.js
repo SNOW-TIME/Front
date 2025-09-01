@@ -90,6 +90,7 @@ function setupScreenEvents(screenName) {
     case 'mainscreen':
       setupMainScreenEvents();
       break;
+
     default:
       console.warn(`알 수 없는 화면: ${screenName}`);
   }

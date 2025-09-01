@@ -1,11 +1,14 @@
 /* components.css */
 
+
+
+
 /* 기본 버튼 */
 .btn {
   display: inline-block;
   padding: var(--space-2) var(--space-4);
   font-family: var(--font-text);
-  font-size: var(--text-ord-size); /* 통일: 일반 텍스트 크기 */
+  font-size: var(--text-ord-size);
   font-weight: var(--font-normal);
   text-align: center;
   text-decoration: none;
@@ -51,6 +54,7 @@
   align-items: center;
 }
 
+/* 버튼 생김새 */
 .button-group button {
   position: relative;
   font-size: 16px;
@@ -67,12 +71,14 @@
 }
 
 /* 그라데이션 테두리 효과 */
+
 .button-group button::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 30px;
   padding: 2px;
+
   background: var(--color01); /* ✅ variables.css의 그라데이션 */
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -209,6 +215,7 @@
 }
 
 /* 건물 선택 */
+/* 큰 틀, 하늘색 섹션*/
 .building-section {
   background-color: var(--color-sky-blue);
   border-radius: 20px;
