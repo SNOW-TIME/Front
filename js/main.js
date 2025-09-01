@@ -9,7 +9,6 @@ const appState = {
 // DOM이 준비되면 앱 초기화
 ready(() => {
   console.log('SNOWTIME 앱이 시작되었습니다!');
-  
   initializeApp();
 });
 
@@ -90,7 +89,6 @@ function setupScreenEvents(screenName) {
     case 'mainscreen':
       setupMainScreenEvents();
       break;
-
     default:
       console.warn(`알 수 없는 화면: ${screenName}`);
   }
@@ -114,8 +112,14 @@ function setupLoginEvents() {
   }
 }
 
+// 메인 화면 이벤트 설정
 function setupMainScreenEvents() {
   // TODO: 메인 화면 전용 이벤트 작성
+}
+
+// 대시보드 이벤트 설정 (예시, 필요시 구현)
+function setupDashboardEvents() {
+  // TODO: 대시보드 화면 전용 이벤트 작성
 }
 
 // 로그인 상태 확인 (임시 함수)
@@ -140,4 +144,6 @@ function hideLoading() {
   }
 }
 
+// 전역에서 화면 로드 가능하게
 window.loadScreen = loadScreen;
+

@@ -1,8 +1,5 @@
 /* components.css */
 
-
-
-
 /* 기본 버튼 */
 .btn {
   display: inline-block;
@@ -71,14 +68,12 @@
 }
 
 /* 그라데이션 테두리 효과 */
-
 .button-group button::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 30px;
   padding: 2px;
-
   background: var(--color01); /* ✅ variables.css의 그라데이션 */
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -109,7 +104,7 @@
   background-size: 220px 25px;
   cursor: pointer;
   display: block;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
   text-align: left;
   width: 40px;
   height: 40px;
@@ -129,10 +124,10 @@
   background-color: var(--color-white);
   border-radius: 20px;
   padding: 25px 20px;
-  margin: 10px 10px;
-  align-items: center;       /* 세로 중앙 정렬 */
-  justify-content: center;   /* 가로 중앙 정렬 */
-  gap: 30px;                 /* 버튼 그룹과 입력창 사이 간격 */
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .section-title {
@@ -215,7 +210,6 @@
 }
 
 /* 건물 선택 */
-/* 큰 틀, 하늘색 섹션*/
 .building-section {
   background-color: var(--color-sky-blue);
   border-radius: 20px;
@@ -272,9 +266,8 @@
 
 .search-input {
   border: 3px solid var(--color-gray-500);
-  border-radius: 8px;
-  background-color: var(--color-white);
   border-radius: 20px;
+  background-color: var(--color-white);
   padding: 20px 20px;
   margin-bottom: 30px;
 }
@@ -283,7 +276,6 @@
   font-family: var(--font-text);
   font-size: var(--text-ord-size);
   color: var(--color-black);
-  min-width: 30px;
   margin-left: 5px;
 }
 
@@ -369,4 +361,3 @@
   font-size: 12px;
   font-weight: bold;
 }
-
