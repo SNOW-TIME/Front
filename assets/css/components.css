@@ -69,10 +69,10 @@
 .button-group button::before {
   content: "";
   position: absolute;
-  inset: 0; /* top, right, bottom, left = 0 */
+  inset: 0;
   border-radius: 30px;
   padding: 2px;
-  background: var(--color01); /* ✅ variables.css의 그라데이션 */
+  background: linear-gradient(to right, #10F0DA, #12CADA, #08C4EE, #00BFFF); /* ✅ 그라데이션 */
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -82,11 +82,6 @@
 }
 
 /* hover/active 상태 — typography.css 효과 클래스 이용 */
-.button-group button:hover::before,
-.button-group button:active::before {
-  background: none;
-}
-
 .button-group button:hover::before,
 .button-group button:active::before {
   background: none;
