@@ -114,7 +114,7 @@ function setupLoginEvents() {
 }
 
 function setupMainScreenEvents() {
-
+  // TODO: 메인 화면 전용 이벤트 작성
 }
 
 // 로그인 상태 확인 (임시 함수)
