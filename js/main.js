@@ -9,6 +9,7 @@ const appState = {
 // DOM이 준비되면 앱 초기화
 ready(() => {
   console.log('SNOWTIME 앱이 시작되었습니다!');
+  
   initializeApp();
 });
 
@@ -48,7 +49,7 @@ async function loadScreen(screenName) {
     hideLoading();
     
     console.log(`${screenName} 화면이 로드되었습니다.`);
-    
+   
   } catch (error) {
     console.error('화면 로드 실패:', error);
     // 화면 로드 실패 시 login.html 내용을 직접 삽입
@@ -112,14 +113,7 @@ function setupLoginEvents() {
   }
 }
 
-// 메인 화면 이벤트 설정
 function setupMainScreenEvents() {
-  // TODO: 메인 화면 전용 이벤트 작성
-}
-
-// 대시보드 이벤트 설정 (예시, 필요시 구현)
-function setupDashboardEvents() {
-  // TODO: 대시보드 화면 전용 이벤트 작성
 }
 
 // 로그인 상태 확인 (임시 함수)
@@ -144,6 +138,4 @@ function hideLoading() {
   }
 }
 
-// 전역에서 화면 로드 가능하게
 window.loadScreen = loadScreen;
-
