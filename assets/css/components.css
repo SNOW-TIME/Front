@@ -4,7 +4,7 @@
   display: inline-block;
   padding: var(--space-2) var(--space-4);
   font-family: var(--font-text);
-  font-size: var(--text-small-size);
+  font-size: var(--text-ord-size);
   font-weight: var(--font-normal);
   text-align: center;
   text-decoration: none;
@@ -33,7 +33,7 @@
 
 .gray_btn:hover {
   background: var(--color01);
-  color: var(--color-white);
+  color: var(--color-white)
 }
 
 .btn_center {
