@@ -53,17 +53,16 @@
 /*버튼 생김새*/
 .button-group button {
   position: relative;
-  font-size: 16px;
   padding: 14px 24px;
-  background: var(--color-white);
-  color: var(--color-black);
+  background: white;
+  color: black;
   border: none;
   border-radius: 30px;
-  width: 240px;  /* 또는 300px로 조정 필요시 */
+  width: 300px;
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 1;
-  box-shadow: var(--effect02);
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.2); /* ✅ 그림자 효과 */
 }
 
 /* 그라데이션 테두리 효과를 위한 before 가상 요소 */
@@ -83,11 +82,9 @@
 }
 
 /* hover/active 상태 — typography.css 효과 클래스 이용 */
-.button-group button:hover,
-.button-group button:active {
-  color: var(--color-white);
-  background: var(--color01);
-  box-shadow: var(--effect01); /* ✅ hover 시 다른 그림자 효과 */
+.button-group button:hover::before,
+.button-group button:active::before {
+  background: none;
 }
 
 .button-group button:hover::before,
