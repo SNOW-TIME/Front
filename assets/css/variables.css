@@ -5,13 +5,14 @@
   /* ===== 사용자 정의 색상 ===== */
   --color01: linear-gradient(135deg, #10F0DA 0%, #12CADA 46%, #08C4EE 69%, #00BFFF 100%);
   --color02: #00BFFF;
-  
+
   /* ===== 기본 색상 ===== */
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-black2: #333333;
   --color-gray-500: #E5E5E5;
   --color-sky-blue: #f0f8ff;
-  
+
   /* ===== 폰트 설정 ===== */
   --font-logo: 'MuseoModerno', sans-serif;
   --font-text: 'Actor', sans-serif;
@@ -32,12 +33,12 @@
   --leading-logo: 3.75rem;         /* 60px for logo */
   --leading-normal: 1.5;
   --tracking-logo: 0.03em;         /* 3% for logo */
-  
+
   /* ===== 그림자 효과 ===== */
   --effect01: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   --effect02: 0 4px 10px 0 var(--color02);
   --effect03: 0 4px 4px rgba(0, 0, 0, 0.25);
-  
+
   /* ===== 기본 간격 ===== */
   --space-2: 0.5rem;    /* 8px */
   --space-4: 1rem;      /* 16px */

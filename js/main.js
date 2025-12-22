@@ -49,7 +49,7 @@ async function loadScreen(screenName) {
     hideLoading();
     
     console.log(`${screenName} 화면이 로드되었습니다.`);
-    
+   
   } catch (error) {
     console.error('화면 로드 실패:', error);
     // 화면 로드 실패 시 login.html 내용을 직접 삽입
@@ -87,6 +87,9 @@ function setupScreenEvents(screenName) {
     case 'dashboard':
       setupDashboardEvents();
       break;
+    case 'mainscreen':
+      setupMainScreenEvents();
+      break;
     default:
       console.warn(`알 수 없는 화면: ${screenName}`);
   }
@@ -108,6 +111,9 @@ function setupLoginEvents() {
       // await loadScreen('dashboard');
     });
   }
+}
+
+function setupMainScreenEvents() {
 }
 
 // 로그인 상태 확인 (임시 함수)

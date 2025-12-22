@@ -81,6 +81,12 @@
   z-index: -1;
 }
 
+/* hover/active 상태 — typography.css 효과 클래스 이용 */
+.button-group button:hover::before,
+.button-group button:active::before {
+  background: none;
+}
+
 /* 뒤로 가기 버튼 */
 .back-btn {
   background: url("../images/back-arrow.svg") no-repeat center;
