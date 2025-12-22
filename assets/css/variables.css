@@ -17,18 +17,18 @@
   --font-logo: 'MuseoModerno', sans-serif;
   --font-text: 'Actor', sans-serif;
   --font-fallback: -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-
+  
   /* ===== 폰트 크기 ===== */
   --text-logo-size: 4.4375rem;    /* 71px */
   --text-small-logo-size: 3.75rem; /* 60px */
   --text-title-size: 1.5625rem;   /* 25px */
   --text-ord-size: 1.25rem;       /* 20px */
   --text-small-size: 1rem;        /* 16px */
-
+  
   /* ===== 폰트 굵기 ===== */
   --font-normal: 400;
   --font-semibold: 600;
-
+  
   /* ===== 행간 & 자간 ===== */
   --leading-logo: 3.75rem;         /* 60px for logo */
   --leading-normal: 1.5;
